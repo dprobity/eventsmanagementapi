@@ -30,4 +30,6 @@ urlpatterns = [
 
     # User endpoints
     path('auth/', include('users.urls')),
+    path('categories/', include('categories.urls')),
+
 ]
