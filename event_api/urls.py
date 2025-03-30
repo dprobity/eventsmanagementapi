@@ -31,5 +31,7 @@ urlpatterns = [
     # User endpoints
     path('auth/', include('users.urls')),
     path('categories/', include('categories.urls')),
+    path('events/', include('events.urls')),
+
 
 ]
