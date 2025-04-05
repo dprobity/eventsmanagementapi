@@ -32,6 +32,9 @@ urlpatterns = [
     path('auth/', include('users.urls')),
     path('categories/', include('categories.urls')),
     path('events/', include('events.urls')),
+    path('registrations/', include('registrations.urls')),
+    path('feedbacks/', include('feedbacks.urls')),
+    path('notifications/', include('notifications.urls')),
 
 
 ]
