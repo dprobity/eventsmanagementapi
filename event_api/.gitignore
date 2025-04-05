@@ -1,0 +1,65 @@
+# -- .gitignore for Django/Python Projects --
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Distributions
+sdist
+bdist
+wheels
+
+# Flask stuff (not relevant for Django, but won't hurt)
+instance/
+.webassets-cache
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.swp
+*.swo
+*~
+*.coverage
+*.cover
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.tox
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+migrations/*/__pycache__/
+
+# If you’re using sqlite, ignore the DB file
+#*.sqlite3
+
+# If you have local environment files
+*.env
+.env.*
+
+# If you're collecting static locally
+# staticfiles/
+# static/
+# media/
+
+# VS Code / PyCharm / other IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific
+.DS_Store
