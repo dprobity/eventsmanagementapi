@@ -4,10 +4,13 @@ from django.utils import timezone
 from .models import Event
 from .serializers import EventSerializer
 from .permissions import IsEventOwnerOrReadOnly
+from .permissions import IsOrganizer
+
+
 
 class EventCreateView(generics.CreateAPIView):
     serializer_class = EventSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [IsOrganizer]
 
     def perform_create(self, serializer):
         serializer.save(organizer=self.request.user)
